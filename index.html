@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Liefern Solutions & More Private Limited</title>
+
+<meta name="description" content="Liefern Solutions & More Private Limited provides Solar, Renewable Energy, CSR Skill Development, Government Training Programs, and Professional Upskilling.">
+
+<meta name="keywords" content="Solar Training, Renewable Energy, CSR Training, Skill Development, Government Training, Pune">
+
+<meta name="author" content="Liefern Solutions & More Private Limited">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+background:#f6f9fc;
+color:#333;
+line-height:1.6;
+
+}
+
+header{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#fff;
+box-shadow:0 2px 15px rgba(0,0,0,.08);
+z-index:999;
+
+}
+
+.container{
+
+width:90%;
+max-width:1200px;
+margin:auto;
+
+}
+
+nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 0;
+
+}
+
+.logo{
+
+font-size:28px;
+font-weight:700;
+color:#0b8b61;
+
+}
+
+nav ul{
+
+display:flex;
+list-style:none;
+gap:30px;
+
+}
+
+nav ul li a{
+
+text-decoration:none;
+color:#333;
+font-weight:500;
+transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+color:#0b8b61;
+
+}
+
+.hero{
+
+padding-top:140px;
+padding-bottom:120px;
+
+background:
+linear-gradient(rgba(10,70,60,.75),rgba(10,70,60,.75)),
+url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1800&q=80");
+
+background-size:cover;
+background-position:center;
+
+color:#fff;
+
+}
+
+.hero-content{
+
+display:grid;
+grid-template-columns:1.2fr .8fr;
+gap:40px;
+align-items:center;
+
+}
+
+.hero h1{
+
+font-size:54px;
+font-weight:800;
+line-height:1.2;
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:18px;
+opacity:.95;
+margin-bottom:35px;
+
+}
+
+nav ul li a.active{
+
+color:#12b76a;
+
+font-weight:700;
+
+}
+
+.btn{
+
+display:inline-block;
+padding:15px 35px;
+background:#12b76a;
+color:#fff;
+text-decoration:none;
+border-radius:50px;
+font-weight:600;
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#0d9957;
+transform:translateY(-3px);
+
+}
+
+.hero-card{
+
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(10px);
+padding:35px;
+border-radius:20px;
+border:1px solid rgba(255,255,255,.15);
+
+}
+
+.hero-card h3{
+
+margin-bottom:15px;
+
+}
+
+.hero-card ul{
+
+list-style:none;
+
+}
+
+.hero-card li{
+
+padding:10px 0;
+
+}
+
+section{
+
+padding:90px 0;
+
+}
+
+.section-title{
+
+text-align:center;
+font-size:40px;
+font-weight:700;
+margin-bottom:20px;
+color:#0b8b61;
+
+}
+
+.section-sub{
+
+text-align:center;
+color:#666;
+margin-bottom:60px;
+
+}
+
+.about-grid{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+
+}
+
+.about-text h2{
+
+font-size:38px;
+margin-bottom:25px;
+color:#0b8b61;
+
+}
+
+.about-text p{
+
+margin-bottom:20px;
+
+}
+
+.about-image img{
+
+width:100%;
+border-radius:20px;
+box-shadow:0 20px 50px rgba(0,0,0,.15);
+
+}
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+
+}
+
+.card{
+
+background:#fff;
+padding:35px;
+border-radius:18px;
+box-shadow:0 10px 35px rgba(0,0,0,.08);
+transition:.35s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card i{
+
+font-size:42px;
+color:#12b76a;
+margin-bottom:20px;
+
+}
+
+.card h3{
+
+margin-bottom:15px;
+color:#0b8b61;
+
+}
+
+.highlight{
+
+background:#0b8b61;
+color:#fff;
+
+}
+
+.highlight .section-title{
+
+color:#fff;
+
+}
+
+.highlight .card{
+
+background:rgba(255,255,255,.12);
+color:#fff;
+
+}
+
+.highlight .card h3{
+
+color:#fff;
+
+}
+
+footer{
+
+background:#081c15;
+color:#ddd;
+padding:30px;
+text-align:center;
+
+}
+
+@media(max-width:900px){
+
+.hero-content,
+.about-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.hero{
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+nav{
+
+flex-direction:column;
+
+}
+
+nav ul{
+
+margin-top:20px;
+flex-wrap:wrap;
+justify-content:center;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<nav>
+
+<div class="logo">
+Liefern Solutions & More Private Limited
+</div>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#services">Services</a></li>
+
+<li><a href="#training">Training</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+
+<section class="hero" id="home">
+
+<div class="container">
+
+<div class="hero-content">
+
+<div>
+
+<h1>
+Building Skills for a Sustainable Future
+</h1>
+
+<p>
+
+Liefern Solutions & More Private Limited delivers high-impact
+training programs in Solar, Renewable Energy,
+CSR, and Government-supported skill development
+initiatives—empowering students and professionals
+for tomorrow's workforce.
+
+</p>
+
+<a href="https://wa.me/919619699134"
+class="btn"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+WhatsApp
+
+</a>
+
+<a href="mailto:info@liefern.co.in"
+class="btn"
+style="margin-left:15px;background:#0b8b61;">
+
+<i class="fas fa-envelope"></i>
+
+Email Us
+
+</a>
+
+</div>
+
+<div class="hero-card">
+
+<h3>
+
+Why Choose Us?
+
+</h3>
+
+<ul>
+
+<li>✔ Industry Experienced Trainers</li>
+
+<li>✔ Practical Hands-on Learning</li>
+
+<li>✔ Government & CSR Programs</li>
+
+<li>✔ Online & Offline Training</li>
+
+<li>✔ Placement Focused Training</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<div class="container">
+
+<div class="about-grid">
+
+<div class="about-text">
+
+<h2>
+
+About Us
+
+</h2>
+
+<p>
+
+Liefern Solutions & More Private Limited is a professional
+training and skill-development organization dedicated to
+empowering individuals and institutions through
+industry-relevant learning solutions.
+
+</p>
+
+<p>
+
+We specialize in delivering online and offline training
+programs across Solar, Renewable Energy,
+CSR, Government, and Private training sectors.
+
+</p>
+
+<p>
+
+Our mission is to bridge the gap between education
+and employment through skill-based learning that
+creates future-ready professionals.
+
+</p>
+
+</div>
+
+<div class="about-image">
+
+<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Our Services
+
+</h2>
+
+<p class="section-sub">
+
+Professional Training Solutions for Individuals,
+Institutions and Organizations.
+
+</p>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fas fa-solar-panel"></i>
+
+<h3>
+
+Solar & Renewable Energy Training
+
+</h3>
+
+<p>
+
+Industry-oriented practical training for solar professionals.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-users"></i>
+
+<h3>
+
+CSR Skill Development Programs
+
+</h3>
+
+<p>
+
+Corporate Social Responsibility aligned skill development initiatives.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-landmark"></i>
+
+<h3>
+
+Government Training Programs
+
+</h3>
+
+<p>
+
+Skill development programs aligned with Government initiatives.
+
+</p>
+
+</div>
+<div class="card">
+
+<i class="fas fa-school"></i>
+
+<h3>
+
+Private & Institutional Trainings
+
+</h3>
+
+<p>
+
+Customized training solutions for colleges,
+universities, educational institutions and corporate organizations.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-chart-line"></i>
+
+<h3>
+
+Professional Upskilling
+
+</h3>
+
+<p>
+
+Enhance technical and professional capabilities
+through industry-focused learning programs.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="highlight" id="training">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Training Modes
+
+</h2>
+
+<p class="section-sub" style="color:#fff;">
+
+Flexible learning methods designed for students,
+professionals and institutions.
+
+</p>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fas fa-laptop"></i>
+
+<h3>
+
+Online Training
+
+</h3>
+
+<p>
+
+Interactive live instructor-led classes from
+anywhere with practical assignments.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-chalkboard-teacher"></i>
+
+<h3>
+
+Offline Training
+
+</h3>
+
+<p>
+
+Hands-on classroom sessions with real-world
+practical exposure.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-arrows-rotate"></i>
+
+<h3>
+
+Blended Learning
+
+</h3>
+
+<p>
+
+A combination of online flexibility and
+offline practical sessions.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="why">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Why Choose Us
+
+</h2>
+
+<p class="section-sub">
+
+Building future-ready professionals through
+quality training and practical exposure.
+
+</p>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fas fa-user-tie"></i>
+
+<h3>
+
+Industry Experienced Trainers
+
+</h3>
+
+<p>
+
+Learn directly from professionals with
+real industry experience.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-award"></i>
+
+<h3>
+
+Quality Training
+
+</h3>
+
+<p>
+
+Comprehensive curriculum designed to
+meet current industry standards.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-handshake"></i>
+
+<h3>
+
+Government & CSR Aligned
+
+</h3>
+
+<p>
+
+Programs supporting government initiatives
+and CSR development goals.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-gears"></i>
+
+<h3>
+
+Customized Learning
+
+</h3>
+
+<p>
+
+Training models tailored for colleges,
+companies and institutions.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-briefcase"></i>
+
+<h3>
+
+Placement Oriented
+
+</h3>
+
+<p>
+
+Practical training with a strong focus
+on employability and career growth.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-certificate"></i>
+
+<h3>
+
+Commitment to Excellence
+
+</h3>
+
+<p>
+
+Delivering high-quality learning experiences
+with measurable outcomes.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section style="background:#f3faf7;">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Our Impact
+
+</h2>
+
+<p class="section-sub">
+
+Empowering the workforce through
+quality education and sustainable skills.
+
+</p>
+
+<div class="cards">
+
+<div class="card" style="text-align:center;">
+
+<h2 style="font-size:48px;color:#12b76a;">100+</h2>
+
+<h3>Training Programs</h3>
+
+</div>
+
+<div class="card" style="text-align:center;">
+
+<h2 style="font-size:48px;color:#12b76a;">1000+</h2>
+
+<h3>Professionals Trained</h3>
+
+</div>
+
+<div class="card" style="text-align:center;">
+
+<h2 style="font-size:48px;color:#12b76a;">50+</h2>
+
+<h3>Institutional Collaborations</h3>
+
+</div>
+
+<div class="card" style="text-align:center;">
+
+<h2 style="font-size:48px;color:#12b76a;">100%</h2>
+
+<h3>Commitment to Quality</h3>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="container" style="text-align:center; max-width:800px; margin:auto;">
+
+<h2 class="section-title">
+Contact Us
+</h2>
+
+<p class="section-sub">
+We'd love to hear from you.<br>
+Reach out for training enquiries, partnerships, or customized programs.
+</p>
+
+<h3 style="color:#0b8b61; margin:30px 0 20px;">
+Liefern Solutions &amp; More Private Limited
+</h3>
+
+<p style="margin-bottom:20px;">
+<i class="fas fa-location-dot"></i>
+&nbsp; Pune, Maharashtra, India
+</p>
+
+<p style="margin-bottom:20px;">
+<i class="fas fa-phone"></i>
+&nbsp;
+<a href="tel:+919619699134" style="text-decoration:none; color:#333;">
++91 96196 99134
+</a>
+<br>
+<small>Training Operations</small>
+</p>
+
+<p style="margin-bottom:15px;">
+<i class="fas fa-envelope"></i>
+&nbsp;
+<a href="mailto:info@liefern.co.in" style="text-decoration:none; color:#333;">
+info@liefern.co.in
+</a>
+</p>
+
+<p style="margin-bottom:30px;">
+<i class="fas fa-graduation-cap"></i>
+&nbsp;
+<a href="mailto:Training@liefern.co.in" style="text-decoration:none; color:#333;">
+Training@liefern.co.in
+</a>
+</p>
+
+<a href="https://wa.me/919619699134" class="btn" target="_blank">
+<i class="fab fa-whatsapp"></i> Chat on WhatsApp
+</a>
+
+</div>
+
+</section>
+
+
+<section style="background:#0b8b61;color:white;">
+
+<div class="container">
+
+<h2 class="section-title" style="color:white;">
+
+Our Vision
+
+</h2>
+
+<p style="text-align:center;max-width:900px;margin:auto;font-size:18px;line-height:1.8;">
+
+To become one of India's leading organizations in
+renewable energy education and skill development by
+creating highly skilled professionals who contribute to
+a sustainable and greener future.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+
+Our Mission
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fas fa-lightbulb"></i>
+
+<h3>
+
+Innovation
+
+</h3>
+
+<p>
+
+Continuously improving learning methods and adopting
+modern technologies.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-seedling"></i>
+
+<h3>
+
+Sustainability
+
+</h3>
+
+<p>
+
+Supporting India's renewable energy mission through
+quality education.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-users-gear"></i>
+
+<h3>
+
+Empowerment
+
+</h3>
+
+<p>
+
+Helping students and professionals build successful
+careers through practical skill development.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer style="background:#081c15;color:#fff;padding:18px 0;">
+
+<div class="container" style="text-align:center;">
+
+<h3 style="margin-bottom:8px;font-size:28px;">
+Liefern Solutions &amp; More Private Limited
+</h3>
+
+<p style="margin-bottom:15px;color:#d9d9d9;">
+Building Skills for a Sustainable Future
+</p>
+
+<p style="margin-bottom:15px;line-height:1.8;">
+
+<i class="fas fa-location-dot"></i>
+Pune, Maharashtra
+
+&nbsp;&nbsp;|&nbsp;&nbsp;
+
+<i class="fas fa-phone"></i>
+<a href="tel:+919619699134"
+style="color:#fff;text-decoration:none;">
++91 96196 99134
+</a>
+
+&nbsp;&nbsp;|&nbsp;&nbsp;
+
+<i class="fas fa-envelope"></i>
+<a href="mailto:info@liefern.co.in"
+style="color:#fff;text-decoration:none;">
+info@liefern.co.in
+</a>
+
+</p>
+
+<p style="font-size:14px;color:#bbb;margin:0;">
+© 2026 Liefern Solutions &amp; More Private Limited. All Rights Reserved.
+</p>
+
+</div>
+
+</footer>
+<a
+
+href="https://wa.me/919619699134"
+
+target="_blank"
+
+id="whatsapp"
+
+title="Chat on WhatsApp">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<style>
+
+#whatsapp{
+
+position:fixed;
+
+right:25px;
+
+bottom:25px;
+
+width:65px;
+
+height:65px;
+
+background:#25D366;
+
+color:white;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+border-radius:50%;
+
+font-size:34px;
+
+text-decoration:none;
+
+box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+z-index:999;
+
+transition:.3s;
+
+}
+
+#whatsapp:hover{
+
+transform:scale(1.1);
+
+}
+
+input,
+textarea{
+
+font-size:16px;
+
+}
+
+</style>
+
+<script>
+// =========================
+// Smooth Scroll Active Menu
+// =========================
+
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("nav ul li a");
+
+window.addEventListener("scroll", () => {
+
+    let current = "";
+
+    sections.forEach(section => {
+
+        const sectionTop = section.offsetTop - 120;
+        const sectionHeight = section.clientHeight;
+
+        if (pageYOffset >= sectionTop) {
+            current = section.getAttribute("id");
+        }
+
+    });
+
+    navLinks.forEach(link => {
+
+        link.classList.remove("active");
+
+        if (link.getAttribute("href") === "#" + current) {
+
+            link.classList.add("active");
+
+        }
+
+    });
+
+});
+
+// =========================
+// Header Shadow
+// =========================
+
+window.addEventListener("scroll", () => {
+
+    const header = document.querySelector("header");
+
+    if (window.scrollY > 40) {
+
+        header.style.boxShadow = "0 8px 30px rgba(0,0,0,.12)";
+
+    } else {
+
+        header.style.boxShadow = "0 2px 15px rgba(0,0,0,.08)";
+
+    }
+
+});
+
+// =========================
+// Fade Animation
+// =========================
+
+const observer = new IntersectionObserver(
+
+(entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.style.opacity="1";
+entry.target.style.transform="translateY(0px)";
+
+}
+
+});
+
+},
+
+{
+threshold:0.15
+}
+
+);
+
+document.querySelectorAll(".card").forEach(card=>{
+
+card.style.opacity="0";
+card.style.transform="translateY(40px)";
+card.style.transition=".7s";
+
+observer.observe(card);
+
+});
+
+// =========================
+// Counter Animation
+// =========================
+
+const counters=document.querySelectorAll("h2");
+
+counters.forEach(counter=>{
+
+const text=counter.innerText;
+
+if(text.includes("+") || text.includes("%")){
+
+const target=parseInt(text.replace(/\D/g,""));
+
+if(target>0){
+
+let count=0;
+
+const increment=Math.ceil(target/100);
+
+const update=()=>{
+
+count+=increment;
+
+if(count>=target){
+
+counter.innerText=text;
+
+}
+else{
+
+if(text.includes("%")){
+
+counter.innerText=count+"%";
+
+}else{
+
+counter.innerText=count+"+";
+
+}
+
+requestAnimationFrame(update);
+
+}
+
+};
+
+update();
+
+}
+
+}
+
+});
+
+// =========================
+// WhatsApp Button Tooltip
+// =========================
+
+const whatsapp=document.getElementById("whatsapp");
+
+whatsapp.addEventListener("mouseenter",()=>{
+
+whatsapp.style.transform="scale(1.15) rotate(8deg)";
+
+});
+
+whatsapp.addEventListener("mouseleave",()=>{
+
+whatsapp.style.transform="scale(1) rotate(0deg)";
+
+});
+
+// =========================
+// Footer Year
+// =========================
+
+const footer=document.querySelector("footer p:last-child");
+
+footer.innerHTML=
+"© "+new Date().getFullYear()+" Liefern Solutions & More Private Limited. All Rights Reserved.";
+
+// =========================
+// Console Welcome
+// =========================
+
+console.log(
+"%cWelcome to Liefern Solutions & More Private Limited",
+"color:#0b8b61;font-size:20px;font-weight:bold;"
+);
+
+console.log(
+"Website developed using HTML, CSS & JavaScript."
+);
+
+</script>
+
+</body>
+
+</html>
